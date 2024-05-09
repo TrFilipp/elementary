@@ -2,12 +2,7 @@ package ru.condition;
 
 public class Point {
     public static double distant(int x1, int y1, int x2, int y2) {
-        double x2MinusX1 = x2 - x1;
-        double rslX = Math.pow(x2MinusX1, 2);
-        double y2MinusY1 = y2 - y1;
-        double rslY = Math.pow(y2MinusY1, 2);
-        double rslXPlusY = rslX + rslY;
-        return Math.sqrt(rslXPlusY);
+       return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
 
     }
 
