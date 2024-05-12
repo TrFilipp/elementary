@@ -24,9 +24,9 @@ class ConverterTest {
     }
 
     @Test
-    void whenConvert199RblThen1Dot99Euro() {
-        float in = 199;
-        float expected = 2;
+    void whenConvert210RblThen2Dot1Euro() {
+        float in = 210;
+        float expected = 2.1f;
         float out = Converter.rubleToEuro(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
@@ -42,9 +42,9 @@ class ConverterTest {
     }
 
     @Test
-    void whenConvert271RblThen3Dot01Dlr() {
-        float in = 271;
-        float expected = 3.01f;
+    void whenConvert270RblThen3Dlr() {
+        float in = 270;
+        float expected = 3;
         float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
