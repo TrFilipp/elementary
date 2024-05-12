@@ -1,0 +1,61 @@
+package ru.converter;
+
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
+
+class ConverterTest {
+
+    @Test
+    void whenConverter140RblThen1Dot4Euro() {
+        float in = 140;
+        float expected = 1.4f;
+        float out = Converter.rubleToEuro(in);
+        float eps = 0.0001f;
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
+    }
+
+    @Test
+    void whenConvert180RblThen2Dlr() {
+        float in = 180;
+        float expected = 2;
+        float out = Converter.rubleToDollar(in);
+        float eps = 0.0001f;
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
+    }
+
+    @Test
+    void whenConvert199RblThen1Dot99Euro() {
+        float in = 199;
+        float expected = 2;
+        float out = Converter.rubleToEuro(in);
+        float eps = 0.0001f;
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
+    }
+
+    @Test
+    void whenConvert300RblThen3Euro() {
+        float in = 300;
+        float expected = 3;
+        float out = Converter.rubleToEuro(in);
+        float eps = 0.0001f;
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
+    }
+
+    @Test
+    void whenConvert271RblThen3Dot01Dlr() {
+        float in = 271;
+        float expected = 3.01f;
+        float out = Converter.rubleToDollar(in);
+        float eps = 0.0001f;
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
+    }
+
+    @Test
+    void whenConvert360RblThen4Dlr() {
+        float in = 360;
+        float expected = 4;
+        float out = Converter.rubleToDollar(in);
+        float eps = 0.0001f;
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
+    }
+}
