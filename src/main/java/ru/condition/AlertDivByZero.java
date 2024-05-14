@@ -13,6 +13,6 @@ public class AlertDivByZero {
         possibleDiv(4);
         possibleDiv(0);
         possibleDiv(-2);
-        possibleDiv(-5);
+        possibleDiv(-4);
     }
 }
