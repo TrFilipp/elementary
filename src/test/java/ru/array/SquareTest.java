@@ -3,7 +3,6 @@ package ru.array;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 class SquareTest {
     @Test
     void whenBound3Then014() {
