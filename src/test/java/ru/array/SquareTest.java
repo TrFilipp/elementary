@@ -21,4 +21,12 @@ class SquareTest {
         assertThat(result).containsExactly(expected);
     }
 
+    @Test
+    void whenBound7Then0149162536() {
+        int bound = 7;
+        int[] result = Square.calculate(bound);
+        int[] expected = new int[] {0, 1, 4, 9, 16, 25, 36};
+        assertThat(result).containsExactly(expected);
+    }
+
 }
