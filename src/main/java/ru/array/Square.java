@@ -4,7 +4,7 @@ public class Square {
     public static int[] calculate(int bound) {
         int[] pow = new int[bound];
         for (int i = 0; i < bound; i++) {
-            pow[i] *= i;
+            pow[i] = i * i;
         }
         return pow;
     }
