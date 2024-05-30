@@ -11,6 +11,7 @@ class TurnTest {
         int[] expected = new int[] {2, 6, 1, 4};
         assertThat(result).containsExactly(expected);
     }
+
     @Test
     void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
         int[] input = new int[] {1, 2, 3, 4, 5};
