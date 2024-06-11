@@ -35,5 +35,4 @@ class SkipNegativeTest {
         };
         assertThat(result).isDeepEqualTo(expected);
     }
-
 }
