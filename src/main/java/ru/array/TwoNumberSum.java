@@ -5,11 +5,12 @@ public class TwoNumberSum {
         int j = array.length - 1;
         int i = 0;
         while (i < j) {
-            if (array[i] + array[j] > target) {
+            int sum = array[i] + array[j];
+            if (sum > target) {
                 j--;
-            } else if (array[i] + array[j] < target) {
+            } else if (sum < target) {
                 i++;
-            } else if (array[i] + array[j] == target) {
+            } else {
                 return new int[]{i, j};
             }
         }
