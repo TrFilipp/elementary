@@ -2,16 +2,15 @@ package ru.array;
 
 public class TwoNumberSum {
     public static int[] getIndexes(int[] array, int target) {
-        int j = 0;
+        int j = array.length - 1;
         int i = 0;
-        while (j < array.length - 1) {
-            if (array[i] + array[j + 1] == target) {
-                return new int[]{i, j + 1};
-            }
-            j++;
-            if (j + 1 == array.length - 1) {
+        while (i < j) {
+            if (array[i] + array[j] > target) {
+                j--;
+            } else if (array[i] + array[j] < target) {
                 i++;
-                j = i;
+            } else if (array[i] + array[j] == target) {
+                return new int[]{i, j};
             }
         }
         return new int[0];
